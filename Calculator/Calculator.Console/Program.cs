@@ -2,7 +2,7 @@
 
 namespace Calculator.Console
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {

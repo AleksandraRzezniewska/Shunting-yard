@@ -5,7 +5,7 @@ namespace Calculator.Library
 {
     public class Equations
     {
-        private string _equation;
+        private readonly string _equation;
         private int _number;
         private double? _result;
 
@@ -55,10 +55,11 @@ namespace Calculator.Library
         {
             var equationString = new Stack();
             var condition = false;
-            var number = "";
-
+            
             for (var i = 0; i < _equation.Length; i++)
             {
+                string number;
+
                 if (condition)
                 {
                     if (int.TryParse(Convert.ToString(_equation[i]), out _number))
