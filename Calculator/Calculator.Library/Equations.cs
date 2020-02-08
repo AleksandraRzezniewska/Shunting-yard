@@ -244,7 +244,7 @@ namespace Calculator.Library
                 case Constants.DivisionSlash:
                     if (number2 == 0)
                     {
-                        throw new DivideByZeroException();
+                        throw new DivideByZeroException("Can't divide by zero");
                     }
 
                     return number1 / number2;
